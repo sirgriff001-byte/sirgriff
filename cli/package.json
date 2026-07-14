@@ -1,0 +1,24 @@
+{
+  "name": "sirgriff-staking-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for Sirgriff token staking",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "sirgriff": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.87.0",
+    "@solana/spl-token": "^0.3.9",
+    "commander": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
